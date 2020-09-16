@@ -8,11 +8,9 @@ public class Radio {
         private int minVolume = 0;
         private int maxStation = 10;
         private int minStation = 0;
+        private int stationAtTheMomentOfSwitchingOn = 10;
         private boolean on;
         private String name;
-
-
-
 
 
     public String getName() {
@@ -57,6 +55,10 @@ public class Radio {
 
     public int getMaxStation() {
         return maxStation;
+    }
+
+    public int getStationAtTheMomentOfSwitchingOn() {
+        return stationAtTheMomentOfSwitchingOn;
     }
 
     public void setMaxStation(int maxStation) {
