@@ -59,6 +59,12 @@ class RadioTest {
     }
 
     @Test
+    public void defaultValue() {
+        radio.setCurrentStation(15);
+        assertEquals(10, radio.getPowerOnValue());
+    }
+
+    @Test
     public void withoutStationDescent() {
         radio.setCurrentStation(0);
         radio.previousStation();

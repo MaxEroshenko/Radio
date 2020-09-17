@@ -8,7 +8,7 @@ public class Radio {
         private int minVolume = 0;
         private int maxStation = 10;
         private int minStation = 0;
-        private int stationAtTheMomentOfSwitchingOn = 10;
+        private int powerOnValue = 10;
         private boolean on;
         private String name;
 
@@ -57,9 +57,6 @@ public class Radio {
         return maxStation;
     }
 
-    public int getStationAtTheMomentOfSwitchingOn() {
-        return stationAtTheMomentOfSwitchingOn;
-    }
 
     public void setMaxStation(int maxStation) {
         this.maxStation = maxStation;
@@ -113,6 +110,10 @@ public class Radio {
 
     public int getMinVolume() {
         return minVolume;
+    }
+
+    public int getPowerOnValue() {
+        return powerOnValue;
     }
 
     public void setMinVolume(int minVolume) {
