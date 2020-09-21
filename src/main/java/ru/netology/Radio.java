@@ -2,26 +2,40 @@ package ru.netology;
 
 public class Radio {
 
-        private int currentStation;
-        private int currentVolume;
-        private int maxVolume = 100;
-        private int minVolume = 0;
-        private int maxStation = 10;
-        private int minStation = 0;
-        private int powerOnValue = 10;
-        private boolean on;
-        private String name;
+    private int currentStation;
+    private int currentVolume;
+    private int maxVolume = 100;
+    private int minVolume = 0;
+    private int maxStation = 10;
+    private int minStation = 0;
+    private int powerOnValue = 10;
+    private boolean on;
+    private String name;
 
+    public Radio(int currentStation, int currentVolume, int maxVolume, int minVolume, int maxStation, int minStation, int powerOnValue, boolean on, String name) {
+        this.currentStation = currentStation;
+        this.currentVolume = currentVolume;
+        this.maxVolume = maxVolume;
+        this.minVolume = minVolume;
+        this.maxStation = maxStation;
+        this.minStation = minStation;
+        this.powerOnValue = powerOnValue;
+        this.on = on;
+        this.name = name;
+    }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public int getCurrentStation() {
+
         return currentStation;
     }
 
@@ -54,23 +68,28 @@ public class Radio {
     }
 
     public int getMaxStation() {
+
         return maxStation;
     }
 
 
     public void setMaxStation(int maxStation) {
+
         this.maxStation = maxStation;
     }
 
     public int getMinStation() {
+
         return minStation;
     }
 
     public void setMinStation(int minStation) {
+
         this.minStation = minStation;
     }
 
     public int getCurrentVolume() {
+
         return currentVolume;
     }
 
@@ -101,30 +120,37 @@ public class Radio {
     }
 
     public int getMaxVolume() {
+
         return maxVolume;
     }
 
     public void setMaxVolume(int maxVolume) {
+
         this.maxVolume = maxVolume;
     }
 
     public int getMinVolume() {
+
         return minVolume;
     }
 
     public int getPowerOnValue() {
+
         return powerOnValue;
     }
 
     public void setMinVolume(int minVolume) {
+
         this.minVolume = minVolume;
     }
 
     public boolean isOn() {
+
         return on;
     }
 
     public void setOn(boolean on) {
+
         this.on = on;
     }
 }
