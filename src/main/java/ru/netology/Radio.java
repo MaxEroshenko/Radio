@@ -12,7 +12,7 @@ public class Radio {
     private boolean on;
     private String name;
 
-    public Radio(int currentStation, int currentVolume, int maxVolume, int minVolume, int maxStation, int minStation, int powerOnValue, boolean on, String name) {
+    public Radio() {
         this.currentStation = currentStation;
         this.currentVolume = currentVolume;
         this.maxVolume = maxVolume;
